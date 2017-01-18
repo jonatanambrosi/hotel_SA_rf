@@ -11,9 +11,7 @@
         <p:dialog id="EmpresaCreateDlg" widgetVar="EmpresaCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreateEmpresaTitle}">
             <h:form id="EmpresaCreateForm">
                 <h:panelGroup id="display">
-                    <p:panelGrid columns="2" rendered="#{empresaController.selected != null}">
-                        <p:outputLabel value="#{bundle.CreateEmpresaLabel_idempresa}" for="idempresa" />
-                        <p:inputText id="idempresa" value="#{empresaController.selected.idempresa}" title="#{bundle.CreateEmpresaTitle_idempresa}" required="true" requiredMessage="#{bundle.CreateEmpresaRequiredMessage_idempresa}"/>
+                    <p:panelGrid columns="2" rendered="#{empresaController.selected != null}"> 
                         <p:outputLabel value="#{bundle.CreateEmpresaLabel_nombre}" for="nombre" />
                         <p:inputText id="nombre" value="#{empresaController.selected.nombre}" title="#{bundle.CreateEmpresaTitle_nombre}" required="true" requiredMessage="#{bundle.CreateEmpresaRequiredMessage_nombre}"/>
                         <p:outputLabel value="#{bundle.CreateEmpresaLabel_ruc}" for="ruc" />
